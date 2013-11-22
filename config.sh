@@ -30,7 +30,7 @@ case `uname` in
 	exit -1
 esac
 
-GITREPO=${GITREPO:-"git://github.com/mozilla-b2g/b2g-manifest"}
+GITREPO=${GITREPO:-"git://github.com/s3baair/b2g-manifest"}
 BRANCH=${BRANCH:-master}
 
 while [ $# -ge 1 ]; do
@@ -144,7 +144,8 @@ repo_sync $1
 	echo "Usage: $0 [-cdflnq] (device name)"
 	echo "Flags are passed through to |./repo sync|."
 	echo
-	echo Valid devices to configure are:
+	echo Valid devices to configure are: 
+        echo - huawei-u8833
 	echo - galaxy-s2
 	echo - galaxy-nexus
 	echo - nexus-4
